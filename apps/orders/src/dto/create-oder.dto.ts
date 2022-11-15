@@ -1,11 +1,11 @@
-import { IsString, IsNotEmpty, IsNumber } from 'class-validator';
+import { IsString, IsNotEmpty } from 'class-validator';
 
 export class CreateOrderRequest {
   @IsString()
   @IsNotEmpty()
   name: string;
 
-  @IsNumber()
+  @IsNotEmpty()
   price: number;
 
   @IsString()
